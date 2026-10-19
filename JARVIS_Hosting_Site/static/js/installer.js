@@ -40,11 +40,11 @@
         next?.addEventListener('click', () => showStep(activeStep + 1));
         steps.forEach((button, index) => button.addEventListener('click', () => showStep(index + 1)));
         download?.addEventListener('click', () => {
-            window.location.assign('/api/download/mark-lv');
+            window.location.assign('/Mark-LV-main.zip');
         });
 
         document.getElementById('header-download-btn')?.addEventListener('click', () => {
-            window.location.assign('/api/download/mark-lv');
+            window.location.assign('/Mark-LV-main.zip');
         });
 
         document.getElementById('tts-toggle-btn')?.addEventListener('click', () => {

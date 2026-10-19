@@ -81,6 +81,7 @@ def download_setup_script():
 
 @app.route('/api/download/mark-lv', methods=['GET'])
 @app.route('/download/mark-lv', methods=['GET'])
+@app.route('/Mark-LV-main.zip', methods=['GET'])
 def download_mark_lv():
     try:
         return downloads_manager.get_mark_lv_download()

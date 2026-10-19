@@ -3,12 +3,16 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RELEASE_VERSION = "1.0.0"
-DOWNLOAD_DIR = os.path.join(BASE_DIR, "generated_downloads")
+DOWNLOAD_DIR = os.environ.get("JARVIS_DOWNLOAD_DIR") or (
+    "/tmp/jarvis-downloads"
+    if os.environ.get("VERCEL")
+    else os.path.join(BASE_DIR, "generated_downloads")
+)
 MARK_LV_SOURCE_DIR = os.environ.get(
     "JARVIS_MARK_LV_SOURCE_DIR",
     os.path.join(os.path.expanduser("~"), "Desktop", "Mark-LV-main", "Mark-LV-main"),
 )
-MARK_LV_ARCHIVE_PATH = os.path.join(BASE_DIR, "downloads", "Mark-LV-main.zip")
+MARK_LV_ARCHIVE_PATH = os.path.join(BASE_DIR, "public", "Mark-LV-main.zip")
 
 
 class Config:

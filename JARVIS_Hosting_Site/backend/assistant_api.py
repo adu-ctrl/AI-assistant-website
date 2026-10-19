@@ -1053,7 +1053,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
               <div class="dl-meta-item"><span>Platforms:</span><strong>Windows, macOS, Linux</strong></div>
               <div class="dl-meta-item"><span>Requirements:</span><strong>Python 3.11+</strong></div>
             </div>
-            <a href="/api/download/mark-lv" class="btn btn-primary btn-block download-trigger-btn" id="mark-lv-download-btn">
+            <a href="/Mark-LV-main.zip" class="btn btn-primary btn-block download-trigger-btn" id="mark-lv-download-btn">
               <span class="btn-icon">⬇</span>
               <span>DOWNLOAD FULL PROJECT</span>
             </a>
@@ -1120,7 +1120,7 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
       <div class="footer-links-col">
         <h5 class="col-head">DIRECT BUILDS</h5>
         <ul>
-          <li><a href="/api/download/mark-lv">Download Mark-LV-main.zip</a></li>
+          <li><a href="/Mark-LV-main.zip">Download Mark-LV-main.zip</a></li>
         </ul>
       </div>
 
